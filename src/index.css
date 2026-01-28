@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+:root {
+  /* Default Dark Mode */
+  --bg-main: #020617; /* slate-950 */
+  --bg-card: #0f172a; /* slate-900 */
+  --bg-card-lighter: #1e293b; /* slate-800 */
+  
+  --text-main: #f8fafc; /* slate-50 */
+  --text-muted: #94a3b8; /* slate-400 */
+  
+  --border-main: #1e293b; /* slate-800 */
+  --border-hover: #00629B; /* ieee-blue */
+
+  --color-ieee-blue: #00629B;
+  --color-ieee-dark: #002855;
+  --shadow-color: rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="light"] {
+  /* Light Mode */
+  --bg-main: #ffffff;
+  --bg-card: #f8fafc; /* slate-50 */
+  --bg-card-lighter: #f1f5f9; /* slate-100 */
+  
+  --text-main: #0f172a; /* slate-900 */
+  --text-muted: #475569; /* slate-600 */
+  
+  --border-main: #e2e8f0; /* slate-200 */
+  --border-hover: #00629B;
+  
+  --shadow-color: rgba(0, 0, 0, 0.05);
+}
+
+@theme {
+  --color-app-bg: var(--bg-main);
+  --color-app-card: var(--bg-card);
+  --color-app-card-lighter: var(--bg-card-lighter);
+  
+  --color-app-text: var(--text-main);
+  --color-app-muted: var(--text-muted);
+  
+  --color-app-border: var(--border-main);
+  --color-app-border-hover: var(--border-hover);
+
+  --color-ieee-blue: var(--color-ieee-blue);
+  --color-ieee-dark: var(--color-ieee-dark);
+  --font-sans: 'Outfit', sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-app-bg text-app-text font-sans antialiased transition-colors duration-300;
+  }
+}
