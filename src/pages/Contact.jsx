@@ -68,11 +68,11 @@ const Contact = () => {
                             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                                 <div>
                                     <label className="block text-sm font-medium text-app-muted mb-2 transition-colors duration-300">Name</label>
-                                    <input type="text" className="w-full bg-app-card-lighter border border-app-border rounded-lg px-4 py-3 text-app-text focus:outline-none focus:border-ieee-blue focus:ring-1 focus:ring-ieee-blue transition-all" placeholder="John Doe" />
+                                    <input type="text" className="w-full bg-app-card-lighter border border-app-border rounded-lg px-4 py-3 text-app-text focus:outline-none focus:border-ieee-blue focus:ring-1 focus:ring-ieee-blue transition-all" placeholder="name..." />
                                 </div>
                                 <div>
                                     <label className="block text-sm font-medium text-app-muted mb-2 transition-colors duration-300">Email</label>
-                                    <input type="email" className="w-full bg-app-card-lighter border border-app-border rounded-lg px-4 py-3 text-app-text focus:outline-none focus:border-ieee-blue focus:ring-1 focus:ring-ieee-blue transition-all" placeholder="john@example.com" />
+                                    <input type="email" className="w-full bg-app-card-lighter border border-app-border rounded-lg px-4 py-3 text-app-text focus:outline-none focus:border-ieee-blue focus:ring-1 focus:ring-ieee-blue transition-all" placeholder="Abc@example.com" />
                                 </div>
                             </div>
                             <div>
